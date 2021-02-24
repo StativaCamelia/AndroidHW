@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="40sp"
+        android:textColor="@color/my_app_primary_dark_variant_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="WELCOME"
+        />
+    <ListView
+        android:id="@+id/list_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:scrollbarSize="4dp" />
+
+</LinearLayout>
