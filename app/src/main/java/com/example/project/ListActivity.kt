@@ -3,6 +3,8 @@ package com.example.project
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import android.widget.AdapterView
 import android.widget.ListView
 
@@ -25,6 +27,12 @@ class ListActivity: Activity(){
     private fun onClickItem(position: Int) {
         val i = Intent(this, InformationsDetails::class.java).putExtra("position", position);
         startActivity(i)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.activity_menu, menu)
+        return true
     }
 
 }
